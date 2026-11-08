@@ -1,0 +1,347 @@
+/* ==============================================================
+   PROTHAM - MATH WHIZ: Stylesheet
+   Minimalist, clean, and classic academic/student software style.
+   ============================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #24292f;
+    line-height: 1.5;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 28px 32px;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2328;
+    margin-bottom: 4px;
+}
+
+.header .subtitle {
+    font-size: 14px;
+    color: #57606a;
+}
+
+.badge-normal {
+    display: inline-block;
+    background-color: #eaeef2;
+    color: #24292f;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Rules / Info Box */
+.info-box {
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    font-size: 13.5px;
+    color: #57606a;
+}
+
+.info-box h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #24292f;
+    margin-bottom: 8px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 6px;
+}
+
+.info-box li {
+    margin-bottom: 4px;
+}
+
+/* Forms & Inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #24292f;
+    margin-bottom: 6px;
+}
+
+.input-hint {
+    font-size: 12.5px;
+    color: #57606a;
+    margin-top: 4px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #d0d7de;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #24292f;
+    transition: border-color 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
+}
+
+/* Question Cards */
+.question-card {
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    background-color: #fafbfc;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.question-title {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #1f2328;
+}
+
+.question-marks {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0969da;
+    background-color: #ddf4ff;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.question-prompt {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #24292f;
+}
+
+.math-expr {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0969da;
+    background-color: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #d0d7de;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.15s ease;
+}
+
+.btn-primary {
+    background-color: #1f883d;
+    color: #ffffff;
+    border-color: rgba(31, 35, 40, 0.15);
+}
+
+.btn-primary:hover {
+    background-color: #1a7f37;
+}
+
+.btn-secondary {
+    background-color: #f6f8fa;
+    color: #24292f;
+    border-color: #d0d7de;
+}
+
+.btn-secondary:hover {
+    background-color: #eaeef2;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.action-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* Result Section */
+.score-summary {
+    text-align: center;
+    padding: 20px;
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+.score-number {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1f2328;
+    line-height: 1.1;
+    margin: 8px 0;
+}
+
+.score-marks {
+    font-size: 14px;
+    color: #57606a;
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.status-pass {
+    background-color: #dafbe1;
+    color: #1a7f37;
+}
+
+.status-fail {
+    background-color: #ffebe9;
+    color: #cf222e;
+}
+
+/* Result Detail Breakdown */
+.breakdown-table,
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    margin-top: 14px;
+}
+
+.breakdown-table th,
+.breakdown-table td,
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.breakdown-table th,
+.leaderboard-table th {
+    background-color: #f6f8fa;
+    color: #24292f;
+    font-weight: 600;
+    border-top: 1px solid #d0d7de;
+}
+
+.tag-correct {
+    color: #1a7f37;
+    font-weight: 600;
+}
+
+.tag-incorrect {
+    color: #cf222e;
+    font-weight: 600;
+}
+
+/* Leaderboard */
+.rank-badge {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #eaeef2;
+    color: #24292f;
+}
+
+.rank-1 {
+    background-color: #fbe044;
+    color: #4d3800;
+}
+
+.rank-2 {
+    background-color: #d0d7de;
+    color: #24292f;
+}
+
+.rank-3 {
+    background-color: #e5b27e;
+    color: #3b2005;
+}
+
+/* Footer */
+.footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    font-size: 12.5px;
+    color: #57606a;
+}
+
+.footer a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
